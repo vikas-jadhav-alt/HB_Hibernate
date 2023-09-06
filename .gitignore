@@ -1,0 +1,26 @@
+
+
+#  * is used as a wildcard match
+#  / is used to ignore pathnames relative to the .gitignore file
+#  # is used to add comments to a .gitignore file
+
+# What Should Be Ignored
+###########################
+# 	- Ignore Only bin-folder which only taken more space: compiled version, rest .setting, .project, .classpath -> no need to ignore
+#	- Refer: https://www.w3schools.com/git/git_ignore.asp?remote=github
+
+
+
+#Ignore Not Useful Files
+/JARs REQUIRED
+
+#ignore STS Workspace MetaData: very large file: must ignore
+.metadata
+
+
+#ignore bin, target  => folder found anywhere
+**/bin/
+**/target/
+
+ 
+

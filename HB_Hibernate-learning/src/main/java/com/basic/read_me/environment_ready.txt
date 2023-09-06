@@ -1,0 +1,8 @@
+
+
+
+Exceptions and Their Solution
+==============================
+1. xception in thread "main" java.lang.IllegalArgumentException: Unable to locate persister: com.basic.objectStates.Student
+
+soln: checking mapping in configuration file, check if class fully-qualified name properly given.

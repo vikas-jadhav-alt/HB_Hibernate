@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- create: With New Start: Drop Table If Exist and Create New -->
+		<property name="hbm2ddl.auto">create</property>
+
+		<!-- update: if Table Does Not Exist: Create New OtherWise Don't Do Anything -->
+		<!-- Don't Drop and re-create the database schema on startup,Just update 
+			it -->
+		
+		<!-- <property name="hbm2ddl.auto">update</property> -->
+
+		<!-- use MySQL5Dialect, instead of MySQLDialect, if getting some error 
+			configuring the Hibernate -->
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<!-- Format the generated Sql -->
+		<!-- <property name="format_sql">true</property> -->
+
+		<!-- Database connection properties -->
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate_practice</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">adampassword</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<mapping class="com.basic.Student" />
+		<mapping class="com.basic.Address" />
+
+
+	</session-factory>
+</hibernate-configuration>  
