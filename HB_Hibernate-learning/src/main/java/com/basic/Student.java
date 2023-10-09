@@ -1,6 +1,7 @@
 package com.basic;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -21,7 +22,9 @@ public class Student {
 
 	private String name;
 	private String city;
-	
+
+	@Embedded // Just Specifies a persistent field or property of an entity whose value is an
+				// instance of an embeddable class.
 	private Certificate certi;
 
 	public Student() {

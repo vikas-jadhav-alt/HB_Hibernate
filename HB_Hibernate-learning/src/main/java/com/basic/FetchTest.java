@@ -41,15 +41,17 @@ public class FetchTest {
 		/**
 		 * Student s1 = session.get(Student.class, 101); // Early Fetching: Always Hit
 		 * Session Cache or DB => No Need to wait for Print or Call Getter Methods other
-		 * than getId() WHY Other than GetId: because: you have already mentioned in
+		 * than getId() 
+		 * >> WHY Other than GetId: because: you have already mentioned in
 		 * Java Statement ID: then no need to fetch from DB
 		 */
 
 //		  Student s3 = session.get(Student.class, 102); // Data From DB
-//		  System.out.println("Student 101: " + s3); Student s3t =
-//		  session.get(Student.class, 102); System.out.println("Student 101: " + s3t);
-//		  // Here Data Coming From Cache
-//		  
+//		  System.out.println("Student 102: " + s3); 
+		
+//		  Student s3t = session.get(Student.class, 102); 
+//		  System.out.println("Student 102: " + s3t);		  // Here Data Coming From Cache
+	  
 //		  Student s2 = session.get(Student.class, 186);
 //		  System.out.println("Student 186: " + s2); // GET Returns NULL if not found
 

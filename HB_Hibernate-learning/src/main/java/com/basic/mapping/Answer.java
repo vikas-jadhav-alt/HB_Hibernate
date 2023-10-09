@@ -3,6 +3,7 @@ package com.basic.mapping;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 
 @Entity
@@ -24,7 +25,7 @@ public class Answer {
 	 */
 
 	/**
-	 * mappedBy: if we don't want to tore Question.question_Id column as foreign key
+	 * mappedBy: if we don't want to store Question.question_Id column as foreign key
 	 * in "answer" table.
 	 * 
 	 * Mapped by should be used in inverse (non-owning) side of the association.

@@ -11,7 +11,6 @@
 		<!-- update: if Table Does Not Exist: Create New OtherWise Don't Do Anything -->
 		<!-- Don't Drop and re-create the database schema on startup,Just update 
 			it -->
-		
 		<!-- <property name="hbm2ddl.auto">update</property> -->
 
 		<!-- use MySQL5Dialect, instead of MySQLDialect, if getting some error 

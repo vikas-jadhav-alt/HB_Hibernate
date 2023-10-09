@@ -49,9 +49,11 @@ public class App {
 		for (int i = 1; i <= 3; i++) {
 
 			Student st1 = new Student(i + 100, "Mohan" + i, "Ranchi" + i);
+			
+//			Tx: only required for DML Queries. DQL Queries are auto-committed.
 
-			// Tracsaction (Tx) is necessary to use only when we save|update any data, not
-			// during FETCHING:get,load
+			// Tracsaction (Tx) is necessary to use only when we save|update|delete (DML-Queries) any data, not
+			// during FETCHING:get,load (DQL)
 			Transaction tx = session.beginTransaction();
 			session.persist(st1);
 			// as many saving|transaction queries we can write here

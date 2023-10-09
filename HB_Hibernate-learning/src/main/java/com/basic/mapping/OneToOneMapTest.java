@@ -44,6 +44,7 @@ public class OneToOneMapTest {
 		 * Question [questionId=111, question=What is Java?, answer=Answer [answerId=11,
 		 * answer=Java is a programming suite, question=null]]
 		 */
+		//We did not get Questions details here as : we don't have any Question Field in the DB
 
 		Answer ra1 = session.get(Answer.class, 11);
 		System.out.println(ra1);
